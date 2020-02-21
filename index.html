@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Game of Life</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+
+    <a class=button id=button-start>Start</a>
+    <a class=button id=button-step>Step</a>
+    <a class=button id=button-pause>Pause</a>
+    <a class=button id=button-clear>Clear</a>
+    <a class=button id=button-random>Random</a>
+    <a class=button id=button-border>Border</a>
+    <a class=button id=button-cross>Cross</a>
+
+
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="30" value="30" class="slider" id="myRange">Speed
+    </div>
+
+
+    <label class="container">Draw
+        <input id=check type="checkbox">
+        <div class="checkmark"></div>
+    </label>
+
+
+    <label for="xfield">X size: </label>
+    <input id=xfield class="w3-input" type="text" value=100 autofocus>
+    <label for="yfield">Y size: </label>
+    <input id=yfield class="w3-input" type="text" value=100 autofocus>
+    <label for="resfield">Resolution [px]: </label>
+    <input id=resfield class="w3-input" type="text" value=6 autofocus>
+    <a class=button id=button-resize>Resize</a>
+
+    <p></p>
+    <script type="text/javascript" src="life.js"></script>
+    <script type="text/javascript" src="UI.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+
+</head>
+
+<body>
+</body>
+
+</html>
